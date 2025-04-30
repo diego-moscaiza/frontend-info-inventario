@@ -47,3 +47,7 @@ Este sistema permite realizar consultas de movimientos de almacén mediante filt
 
 - Navegador web moderno (Chrome, Firefox, Edge, etc.)
 - Conexión al servidor de API en ejecución
+
+## Vista previa
+
+![vista_previa_consulta de movimientos](image.png)
