@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ejemplo de formulario y tabla" />
+    <meta name="author" content="Tu Nombre" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="index.js"></script>
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <main>
+      <h1>Consulta de Movimientos de Almacén</h1>
+      <form id="form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="input">Fecha Inicio</label>
+            <input type="date" id="input" placeholder="DD/MM/YYYY" />
+          </div>
+          <div class="form-group">
+            <label for="input2">Fecha Fin</label>
+            <input type="date" id="input2" placeholder="DD/MM/YYYY" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="input3">Tipo Movimiento</label>
+            <input
+              type="text"
+              id="input3"
+              placeholder="Ingrese código de movimiento"
+            />
+          </div>
+          <div class="form-group">
+            <label for="input4">Número Documento</label>
+            <input
+              type="text"
+              id="input4"
+              placeholder="Ingrese número de documento"
+            />
+          </div>
+        </div>
+        <button id="btn">Consultar</button>
+      </form>
 
-</body>
+      <h2>MOVIMIENTO INVENTARIOS</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>COD_CIA</th>
+            <th>COMPANIA_VENTA_3</th>
+            <th>ALMACEN_VENTA</th>
+            <th>TIPO_MOVIMIENTO</th>
+            <th>TIPO_DOCUMENTO</th>
+            <th>NRO_DOCUMENTO</th>
+            <th>FECHA_TRANSACCION</th>
+            <th>COD_ITEM_2</th>
+            <th>UM_ITEM_3</th>
+            <th>CANTIDAD</th>
+          </tr>
+        </thead>
+        <tbody id="table-body-1">
+          <!-- Aquí se agregarán los datos de cabecera -->
+        </tbody>
+      </table>
 
+      <h3>MOVIMIENTOS INVENTARIOS UBICACION</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>COD_CIA</th>
+            <th>COMPANIA_VENTA_3</th>
+            <th>ALMACEN_VENTA</th>
+            <th>TIPO_MOVIMIENTO</th>
+            <th>TIPO_DOCUMENTO</th>
+            <th>NRO_DOCUMENTO</th>
+            <th>COD_ITEM_2</th>
+            <th>ZONA</th>
+            <th>RACK</th>
+            <th>NIVEL</th>
+            <th>CASILLERO</th>
+            <th>COD_LOTE</th>
+            <th>COD_ESTADO</th>
+            <th>UM_MOV</th>
+            <th>CANTIDAD</th>
+          </tr>
+        </thead>
+        <tbody id="table-body-2">
+          <!-- Aquí se agregarán los detalles del movimiento -->
+        </tbody>
+      </table>
+    </main>
+  </body>
 </html>
